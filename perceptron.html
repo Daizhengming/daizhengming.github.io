@@ -4,12 +4,13 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 	<head>
-		<title>Machine Learning</title>
+		<title>Elements - Editorial by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -25,46 +26,36 @@
 									<a href="index.html" class="logo"><strong>Machine Learning</strong> XiaoMing</a>
 								</header>
 
-							<!-- Banner -->
+							<!-- Content -->
+							<section>
+									<header class="main">
+										<h1>感知器</h1>
+									</header>
+
+									<!-- Content -->
+										<h2 id="content">感知器模型</h2>
+									<p> 感知器是依据输入实例的特征向量，对其进行二类分类的线性分类模型，旨在求出将训练数据进行线性划分的分离超平面。 由输入空间到输出空间的函数如下：
+									<div lang="latex" class="align-center"> f(x) = sign(w \cdot x + b) </div>
+									其中，<a lang="latex"> w </a> 和 <a lang="latex"> b </a>为感知器参数.<a lang="latex"> sign </a> 为符号函数，如下：
+
+									<div lang="latex" class="align-center"> sign(x)=\left\{\begin{array}{ll}{+1,} & {x \geqslant 0} \\ {-1,} & {x<0}\end{array}\right. </div>
+
+									感知器是一种线性分类模型，属于判别模型。其假设空间定义在特征空间中的所有线性分类模型，即函数集合 <a lang="latex"> \{f|f(x) = w \cdot x + b \} </a>。其几何解释如下：
+									线性方程
+									<div lang="latex" class="align-center"> w \cdot x + b = 0 </div>
+								    </p>
+								</section>
+
 								<section id="banner">
 									<div class="content">
-										<header>
-											<h1>机器学习笔记</h1>
-										</header>
-										<p>这是为个人对于机器学习学习的笔记记录和实现，如果有描述错误的地方，欢迎指正</p>
+										<br /> <br />
+										<p>一个典型的感知器如右图所示, 对应于特征空间中的一个超平面，<a lang="latex"> w </a> 是超平面的法向量，<a lang="latex"> b </a> 是超平面的截距。这个超平面将特征空间划分成两个部分。
+										位于两部分的点，即特征向量被分成正、负两类。</p>
 									</div>
 									<span class="image object">
-										<img src="images/pd.jpeg" alt="" />
+										<img src="images/perceptron/perceptron.jpg" alt="" />
 									</span>
 								</section>
-
-							<!-- Section -->
-								<section>
-									<div class="features">
-										<article>
-											<span class="icon fa-gem"></span>
-											<div class="content">
-												<h3>Python3</h3>
-												<p>Python3的学习</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon solid fa-paper-plane"></span>
-											<div class="content">
-												<h3>Machine Learning</h3>
-												<p>机器学习</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon solid fa-rocket"></span>
-											<div class="content">
-												<h3>Deep Learning</h3>
-												<p>深度学习</p>
-											</div>
-										</article>
-									</div>
-								</section>
-
 
 						</div>
 					</div>
@@ -81,7 +72,7 @@
 								</section>
 
 							<!-- Menu -->
-								<nav id="menu">
+															<nav id="menu">
 									<header class="major">
 										<h2>目录</h2>
 									</header>
@@ -164,6 +155,7 @@
 									</ul>
 								</nav>
 
+
 							<!-- Section -->
 								<section>
 									<header class="major">
@@ -175,6 +167,7 @@
 										杭州 余杭区</li>
 									</ul>
 								</section>
+
 
 						</div>
 					</div>
